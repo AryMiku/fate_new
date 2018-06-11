@@ -9,74 +9,62 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+  <link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
+  <link rel="stylesheet" type = "text/css" href="style.css">
 </head>
-<style>
-    * {box-sizing: border-box;}
-    
-    .free {
-      position: relative;
-      width: 50%;
-      max-width: 200px;
-    }
-    
-    
-    
-    .overlay {
-      position: absolute; 
-      bottom: 0; 
-      background: rgb(0, 0, 0);
-      background: rgba(0, 0, 0, 0.5); /* Black see-through */
-      color: #f1f1f1; 
-      width: 100%;
-      transition: .5s ease;
-      opacity:0;
-      color: white;
-      font-size: 20px;
-      padding: 10px;
-      text-align: center;
-    }
-    
-    .free:hover .overlay {
-      opacity: 1;
-    }
-
-    .imgser {
-      width: 200px;
-      height: 280px;
-    }
-
-    .imgshow {
-      width: 300px;
-      height: 380px;
-    }
-    </style>
 
 <body>
-
+  <nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+      </ul>
+    </div>
+  </nav>
   <div class="container">
-    <center><h2>Saber</h2></center>
+    <center>
+      <h2><font color="white">Saber</h2></font>
+    </center>
     <!-- Trigger the modal with a button -->
     <div class="row">
-    <div class="free" class="col">
-      <img src="img/saber/Artoria1.png" class="imgser"
-      data-toggle="modal" data-target="#myModal" class="imgtransparent" 
-      onmouseover="this.src='img/saber/Artoria4.png';"
-      onmouseout="this.src='img/saber/Artoria1.png';"
-      >
-      <div class="overlay">Artoria Pendragon</div>
-    </div> &nbsp;  &nbsp; 
-    <div class="free" class="col">
-        <img src="img/saber/Artoria1.png" class="imgser"
-        data-toggle="modal" data-target="#myModal" class="imgtransparent" 
-        onmouseover="this.src='img/saber/Artoria4.png';"
-        onmouseout="this.src='img/saber/Artoria1.png';"
-        >
+      <div class="free" class="col">
+        <img src="img/saber/Artoria1.png" class="imgser" data-toggle="modal" data-target="#myModal" class="imgtransparent" onmouseover="this.src='img/saber/Artoria4.png';"
+          onmouseout="this.src='img/saber/Artoria1.png';">
         <div class="overlay">Artoria Pendragon</div>
+      </div> &nbsp; &nbsp;
+      <div class="free" class="col">
+        <img src="img/saber/Alter2.png" class="imgser" data-toggle="modal" data-target="#myModal2" class="imgtransparent" onmouseover="this.src='img/saber/Alter4.png';"
+          onmouseout="this.src='img/saber/Alter2.png';">
+        <div class="overlay">Artoria Pendragon</div>
+      </div>
     </div>
-  </div>
-    <!-- Modal -->
+    <!-- อาเธอเรีย -->
     <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog" style="height:700px; max-height:700px; width:1080px; max-width:1080px;">
 
         <!-- Modal content-->
         <div class="modal-content">
@@ -85,31 +73,89 @@
           </div>
           <div class="modal-body">
             <div>
-              <center>
-                <img src="img/saber/Artoria4.png" class="imgshow"> </center>
-            </div><br>
-            <div name="สกิลแรก">
-              <img src="img/skill/Atk_up.png" > : เพิ่มพลังโจมตีให้กับทั้ง Party เป็นเวลา 3 เทิร์น
+              <table width="100%">
+                <tbody>
+                  <tr>
+                    <td rowspan="5">
+                      <img src="img/saber/Artoria4.png">
+                    </td>
+                    <td>
+                      <img src="img/skill/Atk_up.png">&nbsp; &nbsp; &nbsp; เพิ่มพลังโจมตีให้กับ Party เป็นเวลา 3 เทิร์น</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/skill/Busterup.png">&nbsp; &nbsp; &nbsp; เพิ่มพลัง Buster ให้กับตัวเอง 1 เทิร์น</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/skill/CritStar.png">&nbsp; &nbsp; &nbsp; ดร็อปดาวคริติคอลจำนวนหนึ่ง</td>
+                  </tr>
+                  <tr>
+                    <td>สกิลติดตัว</td>
+                  </tr>
+                  <tr>
+                    <td>โฮกุ : เอ็กคาริเบอร์</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div name="สกิลสอง">
-                <img src="img/skill/Busterup.png" > : เพิ่มพลังโจมตี Buster ให้ตัวเองเป็นเวลา 1 เทิร์น
-              </div>
-              <div name="สกิลสาม">
-                  <img src="img/skill/CritStar.png" > : เพิ่มพลังโจมตี Buster ให้ตัวเองเป็นเวลา 1 เทิร์น
-                </div><br>
-              <div>
-                โฮกุ : ทำความเสียหายเป็นแบบหมู่โดยทำดาเมธสูงสุด
-              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
 
+        </div>
       </div>
+
     </div>
 
-  </div>
+    <!-- อาเธอเรียอัลเตอร์ -->
+    <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog" style="height:700px; max-height:700px; width:1080px; max-width:1080px;">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">อาเธอเรีย เพนดราก้อน (อัลเตอร์)</h4>
+          </div>
+          <div class="modal-body">
+            <div>
+              <table width="100%">
+                <tbody>
+                  <tr>
+                    <td rowspan="5">
+                      <img src="img/saber/Alter4.png">
+                    </td>
+                    <td>
+                      <img src="img/skill/Busterup.png">&nbsp; &nbsp; &nbsp; เพิ่มพลัง Buster ให้กับตัวเอง 1 เทิร์น</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/skill/Atk_up.png">&nbsp; &nbsp; &nbsp; เพิ่มพลังโจมตีให้กับ Party เป็นเวลา 3 เทิร์น </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/skill/CritStar.png">&nbsp; &nbsp; &nbsp; ดร็อปดาวคริติคอลจำนวนหนึ่ง</td>
+                  </tr>
+                  <tr>
+                    <td>สกิลติดตัว</td>
+                  </tr>
+                  <tr>
+                    <td>โฮกุ : เอ็กคาริเบอร์ มอแกน</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
 
 </body>
 
