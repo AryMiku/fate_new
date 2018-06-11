@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -53,6 +54,9 @@
     height: 380px;
   }
 
+  body {
+    font-family: 'Mitr', sans-serif;
+  }
 </style>
 
 <body>
@@ -69,12 +73,12 @@
         <div class="overlay">Artoria Pendragon</div>
       </div> &nbsp; &nbsp;
       <div class="free" class="col">
-        <img src="img/saber/Artoria1.png" class="imgser" data-toggle="modal" data-target="#myModal" class="imgtransparent" onmouseover="this.src='img/saber/Artoria4.png';"
-          onmouseout="this.src='img/saber/Artoria1.png';">
+        <img src="img/saber/Alter2.png" class="imgser" data-toggle="modal" data-target="#myModal2" class="imgtransparent" onmouseover="this.src='img/saber/Alter4.png';"
+          onmouseout="this.src='img/saber/Alter2.png';">
         <div class="overlay">Artoria Pendragon</div>
       </div>
     </div>
-    <!-- Modal -->
+    <!-- อาเธอเรีย -->
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog" style="height:700px; max-height:700px; width:1080px; max-width:1080px;">
 
@@ -85,17 +89,78 @@
           </div>
           <div class="modal-body">
             <div>
-              <table>
-                <tr>
-                  <td>askdfjasf</td>
-                  <td>asdfafaf</td>
-                </tr>
-                <tr>
-                  <td>safasfd</td>
-                  <td>dafdasf</td>
-                </tr>
+              <table width="100%">
+                <tbody>
+                  <tr>
+                    <td rowspan="5">
+                      <img src="img/saber/Artoria4.png">
+                    </td>
+                    <td>
+                      <img src="img/skill/Atk_up.png">&nbsp; &nbsp; &nbsp; เพิ่มพลังโจมตีให้กับ Party เป็นเวลา 3 เทิร์น</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/skill/Busterup.png">&nbsp; &nbsp; &nbsp; เพิ่มพลัง Buster ให้กับตัวเอง 1 เทิร์น</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/skill/CritStar.png">&nbsp; &nbsp; &nbsp; ดร็อปดาวคริติคอลจำนวนหนึ่ง</td>
+                  </tr>
+                  <tr>
+                    <td>สกิลติดตัว</td>
+                  </tr>
+                  <tr>
+                    <td>โฮกุ : เอ็กคาริเบอร์</td>
+                  </tr>
+                </tbody>
               </table>
-              <img src="01.jpg" alt="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- อาเธอเรียอัลเตอร์ -->
+    <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog" style="height:700px; max-height:700px; width:1080px; max-width:1080px;">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">อาเธอเรีย เพนดราก้อน (อัลเตอร์)</h4>
+          </div>
+          <div class="modal-body">
+            <div>
+              <table width="100%">
+                <tbody>
+                  <tr>
+                    <td rowspan="5">
+                      <img src="img/saber/Alter4.png">
+                    </td>
+                    <td>
+                      <img src="img/skill/Busterup.png">&nbsp; &nbsp; &nbsp; เพิ่มพลัง Buster ให้กับตัวเอง 1 เทิร์น</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/skill/Atk_up.png">&nbsp; &nbsp; &nbsp; เพิ่มพลังโจมตีให้กับ Party เป็นเวลา 3 เทิร์น </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/skill/CritStar.png">&nbsp; &nbsp; &nbsp; ดร็อปดาวคริติคอลจำนวนหนึ่ง</td>
+                  </tr>
+                  <tr>
+                    <td>สกิลติดตัว</td>
+                  </tr>
+                  <tr>
+                    <td>โฮกุ : เอ็กคาริเบอร์ มอแกน</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
