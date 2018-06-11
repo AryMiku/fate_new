@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Character</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .free {
+    position: relative;
+    width: 50%;
+    max-width: 200px;
+  }
+
+
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .free:hover .overlay {
+    opacity: 1;
+  }
+
+  .imgser {
+    width: 200px;
+    height: 280px;
+  }
+
+  .imgshow {
+    width: 300px;
+    height: 380px;
+  }
+
+</style>
+
+<body>
+
+  <div class="container">
+    <center>
+      <h2>Saber</h2>
+    </center>
+    <!-- Trigger the modal with a button -->
+    <div class="row">
+      <div class="free" class="col">
+        <img src="img/saber/Artoria1.png" class="imgser" data-toggle="modal" data-target="#myModal" class="imgtransparent" onmouseover="this.src='img/saber/Artoria4.png';"
+          onmouseout="this.src='img/saber/Artoria1.png';">
+        <div class="overlay">Artoria Pendragon</div>
+      </div> &nbsp; &nbsp;
+      <div class="free" class="col">
+        <img src="img/saber/Artoria1.png" class="imgser" data-toggle="modal" data-target="#myModal" class="imgtransparent" onmouseover="this.src='img/saber/Artoria4.png';"
+          onmouseout="this.src='img/saber/Artoria1.png';">
+        <div class="overlay">Artoria Pendragon</div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog" style="height:700px; max-height:700px; width:1080px; max-width:1080px;">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">อาเธอเรีย เพนดราก้อน</h4>
+          </div>
+          <div class="modal-body">
+            <div>
+              <table>
+                <tr>
+                  <td>askdfjasf</td>
+                  <td>asdfafaf</td>
+                </tr>
+                <tr>
+                  <td>safasfd</td>
+                  <td>dafdasf</td>
+                </tr>
+              </table>
+              <img src="01.jpg" alt="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+</body>
+
+</html>
